@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kunene Lungile - Professional Virtual Assistant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
       :root {
-        --primary: #e2cee1;
-        --secondary: #92778b;
-        --accent: #4fc3f7;
+        --primary: rgb(223, 146, 212);
+        --secondary: rgb(187, 66, 133);
+        --accent: #be589c;
         --light: #f8f9fa;
-        --dark: #c2737a;
+        --dark: #66264e;
       }
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +32,29 @@
         background-color: var(--primary);
         color: white;
         padding: 2rem 0;
-        text-align: center;
+      }
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+      .header-text {
+        flex: 1;
+        min-width: 250px;
+      }
+      .profile-image {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        border: 1px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       nav {
         background-color: var(--secondary);
@@ -39,6 +65,7 @@
         justify-content: center;
         list-style: none;
         padding: 0;
+        flex-wrap: wrap;
       }
       nav ul li {
         margin: 0 15px;
@@ -62,19 +89,62 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
       }
-
+      .service-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.3s;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+      }
       .service-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       }
-      .service-card {
-        border: none;
+      .stars {
+        color: #ffd700;
+        margin-bottom: 10px;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      .section-title:after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: var(--accent);
+        margin: 15px auto;
+      }
+      .portfolio-grid,
+      .certificates-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .portfolio-item,
+      .certificate-item {
+        background: white;
         border-radius: 8px;
-        padding: 1.5rem;
-        transition: transform 0.3s;
-        background-color: #4a6fa5; /* Blue background */
-        color: white; /* White text */
+        overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .portfolio-img,
+      .certificate-img {
+        height: 200px;
+        background: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+      }
+      .portfolio-info,
+      .certificate-info {
+        padding: 1rem;
       }
       footer {
         background-color: var(--dark);
@@ -94,23 +164,86 @@
         text-decoration: none;
         font-weight: bold;
         margin-top: 1rem;
+        transition: all 0.3s;
+      }
+      .btn:hover {
+        background-color: var(--secondary);
+        transform: translateY(-2px);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 1200px) {
+        .header-text h1 {
+          font-size: 3rem !important;
+        }
+        .header-text p {
+          font-size: 1.5rem !important;
+        }
+        .profile-image {
+          width: 400px !important;
+          height: 400px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          text-align: center;
+          gap: 2rem !important;
+        }
+        .header-text h1 {
+          font-size: 2.5rem !important;
+        }
+        .header-text p {
+          font-size: 1.3rem !important;
+        }
+        .profile-image {
+          width: 300px !important;
+          height: 300px !important;
+          margin: 0 auto;
+        }
       }
     </style>
   </head>
   <body>
     <header
-      style="background-color: var(--primary); color: white; padding: 2rem 0"
+      style="background-color: var(--primary); color: white; padding: 3rem 0"
     >
       <div
         class="container"
-        style="display: flex; align-items: center; gap: 2rem"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 3rem;
+        "
       >
+        <div class="header-text" style="flex: 1; min-width: 300px">
+          <h1
+            style="
+              margin: 0;
+              font-size: 3.5rem;
+              line-height: 1.2;
+              font-weight: 700;
+            "
+          >
+            KUNENE LUNGILE
+          </h1>
+          <p
+            style="margin: 0; font-size: 1.8rem; font-weight: 300; opacity: 0.9"
+          >
+            Professional Virtual Assistant
+          </p>
+        </div>
         <div
+          class="profile-image"
           style="
             width: 500px;
             height: 500px;
             overflow: hidden;
             border: 1px solid white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
           "
         >
           <img
@@ -118,12 +251,6 @@
             alt="Kunene Lungile"
             style="width: 100%; height: 100%; object-fit: cover"
           />
-        </div>
-        <div>
-          <h1 style="margin: 0; font-size: 5.5rem">KUNENE LUNGILE</h1>
-          <p style="margin: 0; font-size: 2.2rem">
-            Professional Virtual Assistant
-          </p>
         </div>
       </div>
     </header>
@@ -133,6 +260,8 @@
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#tools">Tools</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -152,9 +281,16 @@
 
     <section id="services" class="services">
       <div class="container">
-        <h2>My Services</h2>
+        <h2 class="section-title">My Services</h2>
         <div class="service-grid">
-          <div class="service-card" id="card">
+          <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Calendar Management</h3>
             <ul>
               <li>Creating meetings</li>
@@ -163,6 +299,13 @@
             </ul>
           </div>
           <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Inbox Management</h3>
             <ul>
               <li>Inbox organization</li>
@@ -171,6 +314,13 @@
             </ul>
           </div>
           <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Travel Management</h3>
             <ul>
               <li>Booking flights, hotels, and activities</li>
@@ -179,6 +329,13 @@
             </ul>
           </div>
           <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Household Management</h3>
             <ul>
               <li>Booking service providers</li>
@@ -187,10 +344,24 @@
             </ul>
           </div>
           <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Social Media Management</h3>
             <p>Helping you maintain a professional online presence</p>
           </div>
           <div class="service-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <h3>Web Development Support</h3>
             <p>Assistance with website maintenance and updates</p>
           </div>
@@ -204,7 +375,7 @@
       style="padding: 3rem 0; background-color: #f5f5f5"
     >
       <div class="container">
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <p>
           I am a dedicated virtual assistant with a keen eye for organization
           and a passion for creating seamless workflows. With expertise in
@@ -219,9 +390,67 @@
       </div>
     </section>
 
+    <section id="work" class="work" style="padding: 3rem 0">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="img/Screenshot 2024-10-12 154921.png" alt="calender management">
+              <p>
+                Reduced scheduling conflicts by 80% for a busy executive client
+              </p>
+            </div>
+          <div class="portfolio-item">
+            <img src="img/Screenshot 2024-10-12 160953.png" alt="inbox management">
+              <p>Organized 5000+ emails into an efficient folder system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="certificates"
+      class="certificates"
+      style="padding: 3rem 0; background-color: #f5f5f5"
+    >
+      <div class="container">
+        <h2 class="section-title">My Certificates</h2>
+        <div class="certificates-grid">
+          <div class="certificate-item">
+            <div class="certificate-img">
+              <i class="fas fa-certificate fa-4x"></i>
+            </div>
+            <div class="certificate-info">
+              <h3>Virtual Assistant Certification</h3>
+              <p>VA Training Institute, 2022</p>
+            </div>
+          </div>
+          <div class="certificate-item">
+            <div class="certificate-img">
+              <i class="fas fa-certificate fa-4x"></i>
+            </div>
+            <div class="certificate-info">
+              <h3>Advanced Calendar Management</h3>
+              <p>Productivity Academy, 2023</p>
+            </div>
+          </div>
+          <div class="certificate-item">
+            <div class="certificate-img">
+              <i class="fas fa-certificate fa-4x"></i>
+            </div>
+            <div class="certificate-info">
+              <h3>Social Media Management</h3>
+              <p>Digital Marketing Institute, 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="tools" class="tools" style="padding: 3rem 0">
       <div class="container">
-        <h2>Tools I Use</h2>
+        <h2 class="section-title">Tools I Use</h2>
         <div
           style="
             display: flex;
@@ -239,7 +468,6 @@
             "
           >
             Calendly
-            <img />
           </div>
           <div
             style="
@@ -291,7 +519,7 @@
       style="padding: 3rem 0; background-color: var(--light)"
     >
       <div class="container">
-        <h2>Reach Out!</h2>
+        <h2 class="section-title">Reach Out!</h2>
         <div class="contact-info">
           <p><strong>Email:</strong> lungiekunene@gmail.com</p>
           <p><strong>Phone:</strong> (+27) 72 657 9171</p>
@@ -304,14 +532,36 @@
             >
           </p>
         </div>
-        <h3>Connect With Me</h3>
-        <!-- Add social media icons/links here -->
+        <h3 style="text-align: center; margin-top: 2rem">Connect With Me</h3>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+          "
+        >
+          <a href="#" style="color: var(--primary); font-size: 1.5rem"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" style="color: var(--primary); font-size: 1.5rem"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="www.linkedin.com/in/lungile-prudence-kunene"
+            style="color: var(--primary); font-size: 1.5rem"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" style="color: var(--primary); font-size: 1.5rem"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <p>&copy; 2025 Kunene Lungile - Professional Virtual Assistant</p>
+        <p>&copy; 2023 Kunene Lungile - Professional Virtual Assistant</p>
       </div>
     </footer>
   </body>
