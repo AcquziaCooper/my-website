@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunene Lungile - Professional Virtual Assistant</title>
+    <style>
+      :root {
+        --primary: #4a6fa5;
+        --secondary: #166088;
+        --accent: #4fc3f7;
+        --light: #f8f9fa;
+        --dark: #212529;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--dark);
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: var(--primary);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      nav {
+        background-color: var(--secondary);
+        padding: 1rem 0;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .hero {
+        background-color: var(--light);
+        padding: 3rem 0;
+        text-align: center;
+      }
+      .services {
+        padding: 3rem 0;
+      }
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .service-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.3s;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: var(--dark);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      .contact-info {
+        margin-bottom: 1.5rem;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--accent);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>KUNENE LUNGILE</h1>
+        <p>Professional Virtual Assistant</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Dedicated to Your Efficiency</h2>
+        <p>
+          I help busy professionals stay organized, efficient, and stress-free
+          by handling the details so you can focus on what truly matters.
+        </p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>My Services</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Calendar Management</h3>
+            <ul>
+              <li>Creating meetings</li>
+              <li>Reviewing and optimizing calendars</li>
+              <li>Planning personal and corporate events</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Inbox Management</h3>
+            <ul>
+              <li>Inbox organization</li>
+              <li>Replying on behalf of clients</li>
+              <li>Creating email drafts</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Travel Management</h3>
+            <ul>
+              <li>Booking flights, hotels, and activities</li>
+              <li>Creating detailed itineraries</li>
+              <li>Restaurant and car rental reservations</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Household Management</h3>
+            <ul>
+              <li>Booking service providers</li>
+              <li>Bill payments</li>
+              <li>Birthday and celebration reminders</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Social Media Management</h3>
+            <p>Helping you maintain a professional online presence</p>
+          </div>
+          <div class="service-card">
+            <h3>Web Development Support</h3>
+            <p>Assistance with website maintenance and updates</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="about"
+      style="padding: 3rem 0; background-color: #f5f5f5"
+    >
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a dedicated virtual assistant with a keen eye for organization
+          and a passion for creating seamless workflows. With expertise in
+          various management areas, I help busy professionals reclaim their time
+          and reduce stress by handling the details of their professional and
+          personal lives.
+        </p>
+        <p>
+          My goal is to work smart together, ensuring you can focus on what
+          truly matters while I take care of the rest.
+        </p>
+      </div>
+    </section>
+
+    <section id="tools" class="tools" style="padding: 3rem 0">
+      <div class="container">
+        <h2>Tools I Use</h2>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              background: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            "
+          >
+            Calendly
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            "
+          >
+            Canva
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            "
+          >
+            LinkedIn
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            "
+          >
+            Netlify
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 1rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            "
+          >
+            And more!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="contact"
+      style="padding: 3rem 0; background-color: var(--light)"
+    >
+      <div class="container">
+        <h2>Reach Out!</h2>
+        <div class="contact-info">
+          <p><strong>Email:</strong> lungiekunene@gmail.com</p>
+          <p><strong>Phone:</strong> (+27) 72 657 9171</p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="www.linkedin.com/in/lungile-prudence-kunene"
+              target="_blank"
+              >linkedin.com/in/lungile-prudence-kunene</a
+            >
+          </p>
+        </div>
+        <h3>Connect With Me</h3>
+        <!-- Add social media icons/links here -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Kunene Lungile - Professional Virtual Assistant</p>
+      </div>
+    </footer>
+  </body>
+</html>
