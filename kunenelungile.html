@@ -6,11 +6,11 @@
     <title>Kunene Lungile - Professional Virtual Assistant</title>
     <style>
       :root {
-        --primary: #4a6fa5;
-        --secondary: #166088;
+        --primary: #e2cee1;
+        --secondary: #92778b;
         --accent: #4fc3f7;
         --light: #f8f9fa;
-        --dark: #212529;
+        --dark: #c2737a;
       }
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -54,6 +54,7 @@
         text-align: center;
       }
       .services {
+        background-image: url(Officework.webp);
         padding: 3rem 0;
       }
       .service-grid {
@@ -61,15 +62,19 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
       }
-      .service-card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 1.5rem;
-        transition: transform 0.3s;
-      }
+
       .service-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .service-card {
+        border: none;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.3s;
+        background-color: #4a6fa5; /* Blue background */
+        color: white; /* White text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       footer {
         background-color: var(--dark);
@@ -93,10 +98,33 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>KUNENE LUNGILE</h1>
-        <p>Professional Virtual Assistant</p>
+    <header
+      style="background-color: var(--primary); color: white; padding: 2rem 0"
+    >
+      <div
+        class="container"
+        style="display: flex; align-items: center; gap: 2rem"
+      >
+        <div
+          style="
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid white;
+          "
+        >
+          <img
+            src="img/2.png"
+            alt="Kunene Lungile"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div>
+          <h1 style="margin: 0; font-size: 5.5rem">KUNENE LUNGILE</h1>
+          <p style="margin: 0; font-size: 2.2rem">
+            Professional Virtual Assistant
+          </p>
+        </div>
       </div>
     </header>
 
@@ -126,7 +154,7 @@
       <div class="container">
         <h2>My Services</h2>
         <div class="service-grid">
-          <div class="service-card">
+          <div class="service-card" id="card">
             <h3>Calendar Management</h3>
             <ul>
               <li>Creating meetings</li>
@@ -211,6 +239,7 @@
             "
           >
             Calendly
+            <img />
           </div>
           <div
             style="
@@ -282,7 +311,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2023 Kunene Lungile - Professional Virtual Assistant</p>
+        <p>&copy; 2025 Kunene Lungile - Professional Virtual Assistant</p>
       </div>
     </footer>
   </body>
