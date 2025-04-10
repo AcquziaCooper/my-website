@@ -203,6 +203,17 @@
           margin: 0 auto;
         }
       }
+      @media (max-width: 600px) {
+        #tools div > div {
+          width: 120px !important;
+          height: 120px !important;
+          padding: 1rem !important;
+        }
+        #tools img {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -395,15 +406,20 @@
         <h2 class="section-title">My Work</h2>
         <div class="portfolio-grid">
           <div class="portfolio-item">
-            <img src="img/Screenshot 2024-10-12 154921.png" alt="calender management">
-              <p>
-                Reduced scheduling conflicts by 80% for a busy executive client
-              </p>
-            </div>
+            <img
+              src="img/Screenshot 2024-10-12 154921.png"
+              alt="calender management"
+            />
+            <p>
+              Reduced scheduling conflicts by 80% for a busy executive client
+            </p>
+          </div>
           <div class="portfolio-item">
-            <img src="img/Screenshot 2024-10-12 160953.png" alt="inbox management">
-              <p>Organized 5000+ emails into an efficient folder system</p>
-            </div>
+            <img
+              src="img/Screenshot 2024-10-12 160953.png"
+              alt="inbox management"
+            />
+            <p>Organized 5000+ emails into an efficient folder system</p>
           </div>
         </div>
       </div>
@@ -455,59 +471,144 @@
           style="
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 2rem;
             justify-content: center;
+            align-items: center;
           "
         >
+          <!-- Calendly -->
           <div
             style="
               background: white;
-              padding: 1rem;
-              border-radius: 5px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 140px;
+              height: 140px;
             "
           >
-            Calendly
+            <img
+              src="img/Calendly.png"
+              alt="Calendly"
+              style="
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin-bottom: 0.8rem;
+              "
+            />
+            <span style="text-align: center">Calendly</span>
           </div>
+
+          <!-- Canva -->
           <div
             style="
               background: white;
-              padding: 1rem;
-              border-radius: 5px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 140px;
+              height: 140px;
             "
           >
-            Canva
+            <img
+              src="img/Canva.jpg"
+              alt="Canva"
+              style="
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin-bottom: 0.8rem;
+              "
+            />
+            <span style="text-align: center">Canva</span>
           </div>
+
+          <!-- LinkedIn -->
           <div
             style="
               background: white;
-              padding: 1rem;
-              border-radius: 5px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 140px;
+              height: 140px;
             "
           >
-            LinkedIn
+            <img
+              src="img/Linkedin.png"
+              alt="LinkedIn"
+              style="
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin-bottom: 0.8rem;
+              "
+            />
+            <span style="text-align: center">LinkedIn</span>
           </div>
+
+          <!-- Netlify -->
           <div
             style="
               background: white;
-              padding: 1rem;
-              border-radius: 5px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 140px;
+              height: 140px;
             "
           >
-            Netlify
+            <img
+              src="img/netlify-new-20234970.logowik.com.webp"
+              alt="Netlify"
+              style="
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin-bottom: 0.8rem;
+              "
+            />
+            <span style="text-align: center">Netlify</span>
           </div>
+
+          <!-- Add more tools as needed -->
           <div
             style="
               background: white;
-              padding: 1rem;
-              border-radius: 5px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 140px;
+              height: 140px;
             "
           >
-            And more!
+            <img
+              src="other-icon.png"
+              alt="More Tools"
+              style="
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin-bottom: 0.8rem;
+              "
+            />
+            <span style="text-align: center">More Tools</span>
           </div>
         </div>
       </div>
@@ -548,12 +649,9 @@
             ><i class="fab fa-instagram"></i
           ></a>
           <a
-            href="www.linkedin.com/in/lungile-prudence-kunene"
+            href="https://www.linkedin.com/in/lungile-prudence-kunene/"
             style="color: var(--primary); font-size: 1.5rem"
             ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#" style="color: var(--primary); font-size: 1.5rem"
-            ><i class="fab fa-twitter"></i
           ></a>
         </div>
       </div>
@@ -561,7 +659,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2023 Kunene Lungile - Professional Virtual Assistant</p>
+        <p>&copy; 2025 Kunene Lungile - Professional Virtual Assistant</p>
       </div>
     </footer>
   </body>
