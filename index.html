@@ -170,15 +170,6 @@
         background-color: var(--secondary);
         transform: translateY(-2px);
       }
-      .tools-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-      }
-      .tool-item {
-        width: calc(20% - 1rem);
-      }
 
       /* Mobile Responsiveness */
       @media (max-width: 1200px) {
@@ -233,6 +224,20 @@
         }
         .portfolio-img {
           height: 180px !important;
+        }
+      }
+      .tools-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .tool-item {
+        width: calc(20% - 1rem);
+      }
+      @media (max-width: 768px) {
+        .tool-item {
+          width: calc(50% - 1rem);
         }
       }
     </style>
