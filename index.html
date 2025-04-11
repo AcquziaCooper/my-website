@@ -223,13 +223,13 @@
         }
       }
       @media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr !important;
-    }
-    .portfolio-img {
-        height: 180px !important;
-    }
-}
+        .portfolio-grid {
+          grid-template-columns: 1fr !important;
+        }
+        .portfolio-img {
+          height: 180px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -417,39 +417,99 @@
       </div>
     </section>
 
-    <section id="work" class="work" style="padding: 3rem 0;">
-    <div class="container">
+    <section id="work" class="work" style="padding: 3rem 0">
+      <div class="container">
         <h2 class="section-title">My Work</h2>
-        <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-            
-            <!-- Work Sample 1 -->
-            <div class="portfolio-item" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <div class="portfolio-img" style="height: 220px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #f8f9fa;">
-                    <img src="img/Screenshot 2024-10-12 154921.png" alt="Calendar Optimization" 
-                         style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                </div>
-                <div class="portfolio-info" style="padding: 1.5rem;">
-                    <h3 style="margin: 0 0 0.5rem 0;">Calendar Optimization</h3>
-                    <p style="margin: 0; color: #666;">Reduced scheduling conflicts by 80% for a busy executive client</p>
-                </div>
+        <div
+          class="portfolio-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <!-- Work Sample 1 -->
+          <div
+            class="portfolio-item"
+            style="
+              background: white;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="portfolio-img"
+              style="
+                height: 220px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #f8f9fa;
+              "
+            >
+              <img
+                src="img/Screenshot 2024-10-12 154921.png"
+                alt="Calendar Optimization"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                "
+              />
             </div>
-            
-            
-            <!-- Work Sample 3 -->
-            <div class="portfolio-item" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <div class="portfolio-img" style="height: 220px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #f8f9fa;">
-                    <img src="img/Screenshot 2024-10-12 160953.png" alt="Inbox Overhaul" 
-                         style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                </div>
-                <div class="portfolio-info" style="padding: 1.5rem;">
-                    <h3 style="margin: 0 0 0.5rem 0;">Inbox Overhaul</h3>
-                    <p style="margin: 0; color: #666;">Organized 5000+ emails into an efficient folder system</p>
-                </div>
+            <div class="portfolio-info" style="padding: 1.5rem">
+              <h3 style="margin: 0 0 0.5rem 0">Calendar Optimization</h3>
+              <p style="margin: 0; color: #666">
+                Reduced scheduling conflicts by 80% for a busy executive client
+              </p>
             </div>
-            
+          </div>
+
+          <!-- Work Sample 3 -->
+          <div
+            class="portfolio-item"
+            style="
+              background: white;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="portfolio-img"
+              style="
+                height: 220px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #f8f9fa;
+              "
+            >
+              <img
+                src="img/Screenshot 2024-10-12 160953.png"
+                alt="Inbox Overhaul"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                "
+              />
+            </div>
+            <div class="portfolio-info" style="padding: 1.5rem">
+              <h3 style="margin: 0 0 0.5rem 0">Inbox Overhaul</h3>
+              <p style="margin: 0; color: #666">
+                Organized 5000+ emails into an efficient folder system
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <section
       id="certificates"
@@ -665,7 +725,9 @@
               class="certificate-info"
               style="padding: 1.5rem; text-align: center"
             >
-              <h3 style="margin: 0 0 0.5rem 0">Introduction to Web Development/h3>
+              <h3 style="margin: 0 0 0.5rem 0">
+                Introduction to Web Development
+              </h3>
               <p style="margin: 0; color: #666">SheCodes Academy, 2024</p>
             </div>
           </div>
