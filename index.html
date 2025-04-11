@@ -214,6 +214,14 @@
           height: 50px !important;
         }
       }
+      @media (max-width: 768px) {
+        .certificates-grid {
+          grid-template-columns: 1fr !important;
+        }
+        .certificate-img {
+          height: 300px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -432,47 +440,136 @@
     >
       <div class="container">
         <h2 class="section-title">My Certificates</h2>
-        <div class="certificates-grid">
-          <div class="certificate-item">
-            <div class="certificate-img">
-              <i class="fas fa-certificate fa-4x"></i>
+        <div
+          class="certificates-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <!-- Certificate 1 -->
+          <div
+            class="certificate-item"
+            style="
+              background: white;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="certificate-img"
+              style="
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                padding: 1rem;
+              "
+            >
+              <img
+                src="img/VA Certificate.png"
+                alt="VA Certification"
+                style="
+                  max-width: 100%;
+                  max-height: 100%;
+                  object-fit: contain;
+                  border: 1px solid #eee;
+                "
+              />
             </div>
-            <div class="certificate-info">
-              <h3>
-                <img
-                  src="img/VA Certificate.png"
-                  alt="Virtual Assistant Certificate"
-                />
+            <div
+              class="certificate-info"
+              style="padding: 1.5rem; text-align: center"
+            >
+              <h3 style="margin: 0 0 0.5rem 0">
+                Virtual Assistant Certification
               </h3>
-              <p>ALX, 2024</p>
+              <p style="margin: 0; color: #666">ALX, 2024</p>
             </div>
           </div>
-          <div class="certificate-item">
-            <div class="certificate-img">
-              <i class="fas fa-certificate fa-4x"></i>
+
+          <!-- Certificate 2 -->
+          <div
+            class="certificate-item"
+            style="
+              background: white;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="certificate-img"
+              style="
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                padding: 1rem;
+              "
+            >
+              <img
+                src="img/Web Development.png"
+                alt="Web Development"
+                style="
+                  max-width: 100%;
+                  max-height: 100%;
+                  object-fit: contain;
+                  border: 1px solid #eee;
+                "
+              />
             </div>
-            <div class="certificate-info">
-              <h3>
-                <img
-                  src="img/Web Development.png"
-                  alt="Web Development Certificate"
-                />
-              </h3>
-              <p>SheCodes Academy, 2024</p>
+            <div
+              class="certificate-info"
+              style="padding: 1.5rem; text-align: center"
+            >
+              <h3 style="margin: 0 0 0.5rem 0">Web Development</h3>
+              <p style="margin: 0; color: #666">SheCodes Academy, 2024</p>
             </div>
           </div>
-          <div class="certificate-item">
-            <div class="certificate-img">
-              <i class="fas fa-certificate fa-4x"></i>
+
+          <!-- Certificate 3 -->
+          <div
+            class="certificate-item"
+            style="
+              background: white;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              class="certificate-img"
+              style="
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                padding: 1rem;
+              "
+            >
+              <img
+                src="img/Advanced Web Development.png"
+                alt="Web Development"
+                style="
+                  max-width: 100%;
+                  max-height: 100%;
+                  object-fit: contain;
+                  border: 1px solid #eee;
+                "
+              />
             </div>
-            <div class="certificate-info">
-              <h3>
-                <img
-                  src="img/Advanced Web Development.png"
-                  alt="Advanced Web Development"
-                />
-              </h3>
-              <p>SheCodes Academy, 2024</p>
+            <div
+              class="certificate-info"
+              style="padding: 1.5rem; text-align: center"
+            >
+              <h3 style="margin: 0 0 0.5rem 0">Advanced Web Development</h3>
+              <p style="margin: 0; color: #666">SheCodes Academy, 2024</p>
             </div>
           </div>
         </div>
