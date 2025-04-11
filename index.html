@@ -170,6 +170,15 @@
         background-color: var(--secondary);
         transform: translateY(-2px);
       }
+      .tools-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .tool-item {
+        width: calc(20% - 1rem);
+      }
 
       /* Mobile Responsiveness */
       @media (max-width: 1200px) {
@@ -204,18 +213,11 @@
         }
       }
 
-      @media (max-width: 600px) {
-        #tools div > div {
-          width: 120px !important;
-          height: 120px !important;
-          padding: 1rem !important;
-        }
-        #tools img {
-          width: 50px !important;
-          height: 50px !important;
+      @media (max-width: 768px) {
+        .tool-item {
+          width: calc(50% - 1rem);
         }
       }
-
       @media (max-width: 768px) {
         .certificates-grid {
           grid-template-columns: 1fr !important;
